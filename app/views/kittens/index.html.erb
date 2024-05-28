@@ -1,0 +1,8 @@
+<h1>Kittens</h1>
+
+
+<% @kittens.each do |kitten| %>
+    <p><%= "Name: #{kitten.name} | Age: #{kitten.age}" %> <%= link_to "See more", kitten %> </p>
+<% end %>
+
+<%= link_to "Add kitten", new_kitten_path %>
